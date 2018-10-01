@@ -69,13 +69,13 @@ public class GreeterController {
 }
 
 ----
-<1> The application looks for the prefix from an environment variable called **GREETER_PREFIX**
+<1> The application looks for the prefix from an environment variable called **GREETING_PREFIX**
 
 [[configmap-as-env-vars]]
 === ConfigMap Properties as Environment Variables
 
 Lets create a Kubernetes https://kubernetes.io/docs/tasks/configure-pod-container/configmap/[ConfigMaps] to hold the property called `greeter.prefix`,
-which will then be injected to Kubernetes deployment via an environment variable called **GREETER_PREFIX**
+which will then be injected to Kubernetes deployment via an environment variable called **GREETING_PREFIX**
 
 [[create-configmap]]
 ==== Create ConfigMap
